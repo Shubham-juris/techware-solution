@@ -20,9 +20,10 @@ const ServicesSection = () => {
 
         <div className="md:w-1/2 text-gray-700 space-y-6">
           <div>
-            <h3 className="text-xl font-semibold text-red-600 mb-2">
+            <h3 className="text-xl font-semibold text-blue-900 mb-2">
               Web Development
             </h3>
+            <div className="h-1 w-12 bg-red-500 mb-6"></div>
             <p>
               We build dynamic, responsive, and secure websites tailored to your
               business needs. From simple landing pages to complex enterprise
@@ -31,9 +32,10 @@ const ServicesSection = () => {
           </div>
 
           <div>
-            <h3 className="text-xl font-semibold text-red-600 mb-2">
+            <h3 className="text-xl font-semibold text-blue-900 mb-2">
               App Development
             </h3>
+            <div className="h-1 w-12 bg-red-500 mb-6"></div>
             <p>
               Our team designs and develops mobile applications that deliver
               seamless user experiences on both Android and iOS platforms,
@@ -42,9 +44,10 @@ const ServicesSection = () => {
           </div>
 
           <div>
-            <h3 className="text-xl font-semibold text-red-600 mb-2">
+            <h3 className="text-xl font-semibold text-blue-900 mb-2">
               UI/UX Design
             </h3>
+            <div className="h-1 w-12 bg-red-500 mb-6"></div>
             <p>
               We craft intuitive and engaging user interfaces that not only look
               beautiful but also enhance usability, ensuring your customers have
@@ -53,9 +56,10 @@ const ServicesSection = () => {
           </div>
 
           <div>
-            <h3 className="text-xl font-semibold text-red-600 mb-2">
+            <h3 className="text-xl font-semibold text-blue-900 mb-2">
               Digital Marketing
             </h3>
+            <div className="h-1 w-12 bg-red-500 mb-6"></div>
             <p>
               Boost your online presence and drive business growth through our
               comprehensive digital marketing strategies, including SEO, social
@@ -64,9 +68,10 @@ const ServicesSection = () => {
           </div>
 
           <div>
-            <h3 className="text-xl font-semibold text-red-600 mb-2">
+            <h3 className="text-xl font-semibold text-blue-900 mb-2">
               Software Development
             </h3>
+            <div className="h-1 w-12 bg-red-500 mb-6"></div>
             <p>
               We develop custom software solutions tailored to meet your unique
               business requirements, ensuring scalability, reliability, and

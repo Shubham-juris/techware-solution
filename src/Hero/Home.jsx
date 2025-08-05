@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
-import techwareHeroImg2 from "../assets/hero/6106991.jpg";
+// import techwareHeroImg2 from "../assets/hero/6106991.jpg";
 import techwareHeroImg3 from "../assets/hero/techwareHeroImg3.jpg";
 import techwareHeroImg4 from "../assets/hero/techwareHeroImg4.jpg";
 import HeroSection from "../Hero/HeroSection";
 import Services from "../services/services";
 import { useNavigate } from "react-router-dom";
-
+import techwareHeroImg2 from "../assets/hero/heroimage2.jpg";
 const Home = () => {
   const images = [techwareHeroImg3, techwareHeroImg2, techwareHeroImg4];
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -31,7 +31,7 @@ const Home = () => {
   };
 
   const handleClick = () => {
-    navigate("/contact");
+    navigate("/about");
   };
 
   return (

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Menu, X, ChevronDown } from "lucide-react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -55,42 +55,54 @@ const Navbar = () => {
                 {servicesDropdown && (
                   <div className="absolute top-full mt-2 bg-white shadow-md rounded-md py-2 w-48 z-10">
                     {servicesSubmenu.map((sub) => (
-                      <Link
+                      <NavLink
                         key={sub.name}
                         to={sub.href}
                         onClick={() => setServicesDropdown(false)}
-                        className="block px-4 py-2 text-gray-800 hover:bg-gray-100"
+                        className={({ isActive }) =>
+                          `block px-4 py-2 text-gray-800 hover:bg-gray-100 ${
+                            isActive ? "text-red-500" : ""
+                          }`
+                        }
                       >
                         {sub.name}
-                      </Link>
+                      </NavLink>
                     ))}
                   </div>
                 )}
               </div>
             ) : (
-              <Link
+              <NavLink
                 key={item.name}
                 to={item.href}
                 onClick={() => setServicesDropdown(false)}
-                className="text-gray-800 hover:text-red-500"
+                className={({ isActive }) =>
+                  `text-gray-800 hover:text-red-500 ${
+                    isActive ? "text-red-500" : ""
+                  }`
+                }
               >
                 {item.name}
-              </Link>
+              </NavLink>
             )
           )}
 
           {/* Contact Us button */}
-          <Link
+          <NavLink
             to="/contact"
             onClick={() => setServicesDropdown(false)}
-            className="bg-red-600 text-white px-4 py-1 rounded-full hover:bg-gray-700"
+            className={({ isActive }) =>
+              `bg-red-600 text-white px-4 py-1 rounded-full hover:bg-gray-700 ${
+                isActive ? "!bg-red-700" : ""
+              }`
+            }
           >
             Contact Us
-          </Link>
+          </NavLink>
         </div>
       </div>
 
-      {/* Mobile menu (optional, simple version) */}
+      {/* Mobile menu */}
       {isOpen && (
         <div className="md:hidden px-4 pb-4 space-y-2">
           {menuItems.map((item) =>
@@ -106,46 +118,58 @@ const Navbar = () => {
                 {servicesDropdown && (
                   <div className="pl-4 space-y-1">
                     {servicesSubmenu.map((sub) => (
-                      <Link
+                      <NavLink
                         key={sub.name}
                         to={sub.href}
                         onClick={() => {
                           setServicesDropdown(false);
                           setIsOpen(false);
                         }}
-                        className="block text-gray-800 hover:text-red-500"
+                        className={({ isActive }) =>
+                          `block text-gray-800 hover:text-red-500 ${
+                            isActive ? "text-red-500" : ""
+                          }`
+                        }
                       >
                         {sub.name}
-                      </Link>
+                      </NavLink>
                     ))}
                   </div>
                 )}
               </div>
             ) : (
-              <Link
+              <NavLink
                 key={item.name}
                 to={item.href}
                 onClick={() => {
                   setServicesDropdown(false);
                   setIsOpen(false);
                 }}
-                className="block text-gray-800 hover:text-red-500"
+                className={({ isActive }) =>
+                  `block text-gray-800 hover:text-red-500 ${
+                    isActive ? "text-red-500" : ""
+                  }`
+                }
               >
                 {item.name}
-              </Link>
+              </NavLink>
             )
           )}
 
-          <Link
+          <NavLink
             to="/contact"
             onClick={() => {
               setServicesDropdown(false);
               setIsOpen(false);
             }}
-            className="block bg-red-600 text-white px-4 py-1 rounded-full hover:bg-gray-700"
+            className={({ isActive }) =>
+              `block bg-red-600 text-white px-4 py-1 rounded-full hover:bg-gray-700 ${
+                isActive ? "!bg-red-700" : ""
+              }`
+            }
           >
             Contact Us
-          </Link>
+          </NavLink>
         </div>
       )}
     </nav>

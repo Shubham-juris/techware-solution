@@ -1,6 +1,9 @@
 import React from "react";
 import aboutImage2 from "../assets/about/aboutImage2 (2).jpg";
 import { useNavigate } from "react-router-dom";
+import aboutImage1 from "../assets/about/aboutImg1 - Copy.jpg";
+import aboutImg2 from "../assets/about/aboutImg2.jpg";
+import aboutImage3 from "../assets/about/5083649.jpg";
 const AboutSection = () => {
   const navigate = useNavigate("");
   const handleClick = () => {
@@ -51,6 +54,7 @@ const AboutSection = () => {
         </div>
       </section>
       <section className="py-12 px-4 md:px-8 lg:px-16 bg-white">
+        {/* Heading & intro */}
         <div className="max-w-6xl mx-auto text-center">
           <h1 className="text-4xl md:text-5xl font-bold text-blue-900 mb-4">
             About Techware Solutions
@@ -63,6 +67,7 @@ const AboutSection = () => {
           </p>
         </div>
 
+        {/* Mission & Vision */}
         <div className="max-w-6xl mx-auto mt-10 grid md:grid-cols-2 gap-8 text-left">
           <div className="bg-blue-50 rounded-xl p-6 shadow-sm hover:shadow-md transition">
             <h2 className="text-2xl font-semibold text-blue-800 mb-2">
@@ -85,6 +90,7 @@ const AboutSection = () => {
           </div>
         </div>
 
+        {/* Why Choose Us */}
         <div className="max-w-6xl mx-auto mt-12">
           <h2 className="text-3xl font-semibold text-blue-900 mb-6 text-center">
             Why Choose Us?
@@ -120,6 +126,7 @@ const AboutSection = () => {
           </div>
         </div>
 
+        {/* Contact Us button */}
         <div className="text-center mt-12">
           <button
             onClick={handleClick}
@@ -127,6 +134,93 @@ const AboutSection = () => {
           >
             Contact Us
           </button>
+        </div>
+      </section>
+
+      <section className="py-6 px-4 md:px-8 lg:px-20 bg-white">
+        <div className="max-w-6xl mx-auto text-center mb-12">
+          <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4 uppercase">
+            About Techware Solution
+          </h1>
+        </div>
+
+        {/* Who We Are Section */}
+        <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center mb-16">
+          <div>
+            <img
+              src={aboutImage1}
+              alt="Who We Are"
+              className="rounded-lg shadow-md w-full object-cover"
+            />
+          </div>
+          <div className="text-center md:text-left">
+            <h2 className="text-xl font-semibold uppercase tracking-widest mb-4">
+              Who We Are
+            </h2>
+            <p className="text-gray-700 leading-relaxed">
+              For the last 12 years, <strong>Techware Solution</strong> has been
+              at the forefront of the IT services industry, delivering reliable,
+              innovative, and tailored technology solutions to businesses of all
+              sizes. Our team of seasoned professionals provides expertise in{" "}
+              <strong>
+                firewall configuration, network management, server installation,
+                cybersecurity
+              </strong>
+              , and <strong>cloud computing</strong> — ensuring your IT
+              infrastructure is secure, efficient, and scalable.
+              {/* <br />
+              <br />
+              Over the past decade, we have built long-term partnerships with
+              clients by consistently exceeding expectations and driving
+              business success. Our commitment to excellence, combined with
+              cutting-edge solutions, has allowed us to grow into a trusted
+              partner for numerous organizations across various industries. */}
+            </p>
+          </div>
+        </div>
+
+        {/* Our Mission Section */}
+        <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+          <div className="text-center md:text-left">
+            <h2 className="text-xl font-semibold uppercase tracking-widest mb-4">
+              Our Mission
+            </h2>
+            <p className="text-gray-700 leading-relaxed">
+              At <strong>Techware Solution</strong>, our mission has always been
+              to empower businesses through technology. We focus on providing
+              customized IT solutions that not only solve immediate challenges
+              but also help our clients scale for future growth.
+            </p>
+          </div>
+          <div>
+            <img
+              src={aboutImg2}
+              alt="Our Mission"
+              className="rounded-lg shadow-md w-full object-cover"
+            />
+          </div>
+        </div>
+        <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center mb-16 py-19">
+          <div>
+            <img
+              src={aboutImage3}
+              alt="our vision"
+              className="rounded-lg shadow-md w-full object-cover"
+            />
+          </div>
+          {/* {Our vision} */}
+          <div className="text-center md:text-left">
+            <h2 className="text-xl font-semibold uppercase tracking-widest mb-4">
+              Our Vision
+            </h2>
+            <p className="text-gray-700 leading-relaxed">
+              As we look to the future, our vision remains to continue
+              delivering top-tier IT services that help businesses stay
+              competitive in a rapidly evolving digital landscape. We strive to
+              be the go-to partner for businesses looking to innovate and grow,
+              backed by 12 years of proven expertise and success.
+            </p>
+          </div>
         </div>
       </section>
     </>
