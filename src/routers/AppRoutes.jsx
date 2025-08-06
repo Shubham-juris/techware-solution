@@ -1,6 +1,6 @@
 import Home from "../Hero/Home";
 import { Routes, Route } from "react-router-dom";
-import Services from "../services/services";
+
 import About from "../About/About";
 import Career from "../careers/Career";
 import Technologice from "../technologies/Technologice";
@@ -15,7 +15,6 @@ const AppRoutes = () => {
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/about" element={<About />} />
-      <Route path="/services" element={<Services />} />
       <Route path="/career" element={<Career />} />
       <Route path="/technologice" element={<Technologice />} />
       <Route path="contact" element={<ContactUs />} />
