@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import HeroSection from "../Hero/HeroSection";
-import Services from "../services/services";
+
 import heroImg2 from "../assets/hero/heroImg2.jpg";
 import heroImg4 from "../assets/hero/heroImg4.jpg";
 
@@ -87,7 +87,6 @@ const Home = () => {
       </div>
 
       <HeroSection />
-      <Services />
     </>
   );
 };
