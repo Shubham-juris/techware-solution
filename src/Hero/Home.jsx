@@ -2,36 +2,31 @@ import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import HeroSection from "../Hero/HeroSection";
 import Services from "../services/services";
-
 import heroImg2 from "../assets/hero/heroImg2.jpg";
 import heroImg4 from "../assets/hero/heroImg4.jpg";
 
 const Home = () => {
+  const navigate = useNavigate();
   const images = [heroImg4, heroImg2];
+
   const [currentIndex, setCurrentIndex] = useState(0);
   const [animateText, setAnimateText] = useState(false);
   const [animateImage, setAnimateImage] = useState(false);
-  const navigate = useNavigate();
 
-  // Auto-slide every 5 seconds
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentIndex((prev) => (prev === images.length - 1 ? 0 : prev + 1));
     }, 5000);
-
     return () => clearInterval(interval);
   }, [images.length]);
 
-  // Trigger text and image animations on image change
   useEffect(() => {
     setAnimateText(true);
     setAnimateImage(true);
-
     const timeout = setTimeout(() => {
       setAnimateText(false);
       setAnimateImage(false);
-    }, 1500);
-
+    }, 700);
     return () => clearTimeout(timeout);
   }, [currentIndex]);
 
@@ -50,19 +45,18 @@ const Home = () => {
   return (
     <>
       <div
-        className={`relative w-full h-[90vh] bg-cover bg-center transition-all duration-1000 ease-in-out ${
+        className={` opacity-50 relative w-full h-[90vh] bg-cover bg-center transition-all duration-1000 ease-in-out ${
           animateImage
             ? "opacity-0 scale-105 animate-fadeInImage"
             : "opacity-100"
         }`}
         style={{ backgroundImage: `url(${images[currentIndex]})` }}
       >
-        {/* Overlay */}
         <div className="absolute inset-0  bg-opacity-50 flex items-center justify-center px-4">
           <div className="max-w-4xl text-center text-white">
             <h1
               className={`text-3xl md:text-5xl font-bold mb-6 transform transition-all duration-700 ease-out ${
-                animateText ? "opacity-0 translate-y-10 animate-fadeInUp" : ""
+                animateText ? "opacity-0 translate-y-30 animate-fadeInUp" : ""
               }`}
             >
               Annual Maintenance Contract
@@ -76,7 +70,6 @@ const Home = () => {
           </div>
         </div>
 
-        {/* Prev / Next buttons */}
         <button
           onClick={handlePrev}
           className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-gray-700 bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-80 transition"
@@ -93,7 +86,6 @@ const Home = () => {
         </button>
       </div>
 
-      {/* Other Sections */}
       <HeroSection />
       <Services />
     </>

@@ -25,20 +25,17 @@ const Navbar = () => {
   return (
     <nav className="bg-white shadow-md w-full">
       <div className="max-w-7xl mx-auto px-4 py-5 flex justify-between items-center">
-        {/* Logo */}
         <div className="flex items-center space-x-2">
           <span className="font-semibold text-red-600 text-lg">Techware</span>
           <span className="italic text-blue-500 text-lg">Solutions</span>
         </div>
 
-        {/* Menu toggle button for mobile */}
         <div className="md:hidden">
           <button onClick={() => setIsOpen(!isOpen)}>
             {isOpen ? <X /> : <Menu />}
           </button>
         </div>
 
-        {/* Menu items (desktop) */}
         <div className="hidden md:flex items-center space-x-6">
           {menuItems.map((item) =>
             item.name === "Services" ? (
@@ -51,7 +48,6 @@ const Navbar = () => {
                   <ChevronDown size={16} className="ml-1" />
                 </button>
 
-                {/* Dropdown */}
                 {servicesDropdown && (
                   <div className="absolute top-full mt-2 bg-white shadow-md rounded-md py-2 w-48 z-10">
                     {servicesSubmenu.map((sub) => (
@@ -87,7 +83,6 @@ const Navbar = () => {
             )
           )}
 
-          {/* Contact Us button */}
           <NavLink
             to="/contact"
             onClick={() => setServicesDropdown(false)}
@@ -102,7 +97,6 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Mobile menu */}
       {isOpen && (
         <div className="md:hidden px-4 pb-4 space-y-2">
           {menuItems.map((item) =>

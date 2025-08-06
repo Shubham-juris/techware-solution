@@ -21,23 +21,20 @@ const CareerSection = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle form submission logic here
     console.log(formData);
     alert("Form submitted!");
   };
   return (
     <>
       <section className="relative">
-        {/* Background Image */}
         <div className="w-full">
           <img
-            src={careerImage3} // 🔁 यहाँ अपने actual image URL से बदलें
+            src={careerImage3}
             alt="Team working together"
             className="w-full h-80 md:h-96 object-cover"
           />
         </div>
 
-        {/* Content Section */}
         <div className="bg-white text-center px-4 py-8 md:py-12 max-w-6xl mx-auto">
           <p className="text-gray-800 text-base md:text-lg mb-4">
             Techware having core focus on technology consulting and integration

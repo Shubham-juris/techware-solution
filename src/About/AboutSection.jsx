@@ -54,7 +54,6 @@ const AboutSection = () => {
         </div>
       </section>
       <section className="py-12 px-4 md:px-8 lg:px-16 bg-white">
-        {/* Heading & intro */}
         <div className="max-w-6xl mx-auto text-center">
           <h1 className="text-4xl md:text-5xl font-bold text-blue-900 mb-4">
             About Techware Solutions
@@ -67,7 +66,6 @@ const AboutSection = () => {
           </p>
         </div>
 
-        {/* Mission & Vision */}
         <div className="max-w-6xl mx-auto mt-10 grid md:grid-cols-2 gap-8 text-left">
           <div className="bg-blue-50 rounded-xl p-6 shadow-sm hover:shadow-md transition">
             <h2 className="text-2xl font-semibold text-blue-800 mb-2">
@@ -90,7 +88,6 @@ const AboutSection = () => {
           </div>
         </div>
 
-        {/* Why Choose Us */}
         <div className="max-w-6xl mx-auto mt-12">
           <h2 className="text-3xl font-semibold text-blue-900 mb-6 text-center">
             Why Choose Us?
@@ -126,7 +123,6 @@ const AboutSection = () => {
           </div>
         </div>
 
-        {/* Contact Us button */}
         <div className="text-center mt-12">
           <button
             onClick={handleClick}
@@ -144,7 +140,6 @@ const AboutSection = () => {
           </h1>
         </div>
 
-        {/* Who We Are Section */}
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center mb-16">
           <div>
             <img
@@ -168,18 +163,10 @@ const AboutSection = () => {
               </strong>
               , and <strong>cloud computing</strong> — ensuring your IT
               infrastructure is secure, efficient, and scalable.
-              {/* <br />
-              <br />
-              Over the past decade, we have built long-term partnerships with
-              clients by consistently exceeding expectations and driving
-              business success. Our commitment to excellence, combined with
-              cutting-edge solutions, has allowed us to grow into a trusted
-              partner for numerous organizations across various industries. */}
             </p>
           </div>
         </div>
 
-        {/* Our Mission Section */}
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center py-2">
           <div className="text-center md:text-left">
             <h2 className="text-xl font-semibold uppercase tracking-widest mb-4">
@@ -208,7 +195,6 @@ const AboutSection = () => {
               className="rounded-lg shadow-md w-full object-cover"
             />
           </div>
-          {/* {Our vision} */}
           <div className="text-center md:text-left">
             <h2 className="text-xl font-semibold uppercase tracking-widest mb-4">
               Our Vision

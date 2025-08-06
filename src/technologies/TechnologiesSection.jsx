@@ -48,7 +48,6 @@ const TechnologiesSection = () => {
   return (
     <>
       <section className="w-full">
-        {/* Header Image */}
         <div className="relative">
           <img
             src={technologiesHeroImage}
@@ -57,7 +56,6 @@ const TechnologiesSection = () => {
           />
         </div>
 
-        {/* Title */}
         <div className="text-center px-4 py-6">
           <h2 className="text-lg md:text-xl font-semibold text-gray-800 py-3">
             We deliver state-of-the-art technology solutions to enterprises in
@@ -67,7 +65,6 @@ const TechnologiesSection = () => {
       </section>
       <div className="bg-[#003580] text-white py-12 px-6">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
-          {/* Text Content */}
           <div className="md:w-3/4">
             <h2 className="text-2xl md:text-3xl font-semibold mb-4">
               Take your Business to the Next Level with our Solutions
@@ -83,7 +80,6 @@ const TechnologiesSection = () => {
       </div>
 
       <div className="bg-gray-50 min-h-screen py-12 px-4 md:px-8">
-        {/* Header Section */}
         <div className="max-w-7xl mx-auto text-center mb-12">
           <h1 className="text-3xl md:text-4xl font-bold text-blue-900">
             Our Technologies
@@ -94,7 +90,6 @@ const TechnologiesSection = () => {
           </p>
         </div>
 
-        {/* Technologies Grid */}
         <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {technologies.map((tech, index) => (
             <div
@@ -110,7 +105,6 @@ const TechnologiesSection = () => {
           ))}
         </div>
 
-        {/* CTA Section */}
         <div className="max-w-7xl mx-auto text-center mt-16">
           <h2 className="text-2xl font-bold text-blue-900 mb-4">
             Need a Custom Solution?

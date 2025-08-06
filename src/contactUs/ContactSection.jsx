@@ -13,7 +13,6 @@ const ContactSection = () => {
         </p>
 
         <div className="flex flex-col md:flex-row md:space-x-10">
-          {/* Contact Form */}
           <div className="md:w-2/3 bg-white p-6 rounded-xl shadow-md">
             <form className="space-y-4">
               <div>
@@ -51,7 +50,6 @@ const ContactSection = () => {
             </form>
           </div>
 
-          {/* Contact Information */}
           <div className="md:w-1/3 mt-8 md:mt-0 bg-gray-50 p-6 rounded-xl shadow-md">
             <h3 className="text-xl font-semibold text-gray-800 mb-4">
               Techware Solutions

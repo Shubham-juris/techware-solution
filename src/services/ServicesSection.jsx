@@ -16,7 +16,7 @@ const ServicesSection = () => {
       <div className="h-1 w-12 bg-red-500 mb-6"></div>
 
       <div className="flex flex-col md:flex-row md:space-x-8">
-        <div className="md:w-1/2 mb-6 md:mb-0">
+        <div className="md:w-1/2 mb-6 md:mb-0  ">
           <img
             src={servicesImage2}
             alt="Our Services"
@@ -25,7 +25,6 @@ const ServicesSection = () => {
         </div>
 
         <div className="md:w-1/2 text-gray-700 space-y-6">
-          {/* Web Development */}
           <div>
             <h3 className="text-xl font-semibold text-blue-900 mb-2">
               Web Development
@@ -43,7 +42,6 @@ const ServicesSection = () => {
             </p>
           </div>
 
-          {/* App Development */}
           <div>
             <h3 className="text-xl font-semibold text-blue-900 mb-2">
               App Development
@@ -60,7 +58,6 @@ const ServicesSection = () => {
             </p>
           </div>
 
-          {/* UI/UX Design */}
           <div>
             <h3 className="text-xl font-semibold text-blue-900 mb-2">
               UI/UX Design
@@ -77,7 +74,6 @@ const ServicesSection = () => {
             </p>
           </div>
 
-          {/* Digital Marketing */}
           <div>
             <h3 className="text-xl font-semibold text-blue-900 mb-2">
               Digital Marketing
@@ -94,7 +90,6 @@ const ServicesSection = () => {
             </p>
           </div>
 
-          {/* Software Development */}
           <div>
             <h3 className="text-xl font-semibold text-blue-900 mb-2">
               Software Development
