@@ -1,14 +1,16 @@
 import React, { useState, useEffect } from "react";
-// import techwareHeroImg2 from "../assets/hero/6106991.jpg";
-import techwareHeroImg3 from "../assets/hero/techwareHeroImg3.jpg";
-import techwareHeroImg4 from "../assets/hero/techwareHeroImg4.jpg";
+import { useNavigate } from "react-router-dom";
 import HeroSection from "../Hero/HeroSection";
 import Services from "../services/services";
-import { useNavigate } from "react-router-dom";
-import techwareHeroImg2 from "../assets/hero/heroimage2.jpg";
+
+import heroImg2 from "../assets/hero/heroImg2.jpg";
+import heroImg4 from "../assets/hero/heroImg4.jpg";
+
 const Home = () => {
-  const images = [techwareHeroImg3, techwareHeroImg2, techwareHeroImg4];
+  const images = [heroImg4, heroImg2];
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [animateText, setAnimateText] = useState(false);
+  const [animateImage, setAnimateImage] = useState(false);
   const navigate = useNavigate();
 
   // Auto-slide every 5 seconds
@@ -17,15 +19,26 @@ const Home = () => {
       setCurrentIndex((prev) => (prev === images.length - 1 ? 0 : prev + 1));
     }, 5000);
 
-    return () => clearInterval(interval); // Cleanup on unmount
+    return () => clearInterval(interval);
   }, [images.length]);
 
-  // Previous image
+  // Trigger text and image animations on image change
+  useEffect(() => {
+    setAnimateText(true);
+    setAnimateImage(true);
+
+    const timeout = setTimeout(() => {
+      setAnimateText(false);
+      setAnimateImage(false);
+    }, 1500);
+
+    return () => clearTimeout(timeout);
+  }, [currentIndex]);
+
   const handlePrev = () => {
     setCurrentIndex((prev) => (prev === 0 ? images.length - 1 : prev - 1));
   };
 
-  // Next image
   const handleNext = () => {
     setCurrentIndex((prev) => (prev === images.length - 1 ? 0 : prev + 1));
   };
@@ -37,13 +50,21 @@ const Home = () => {
   return (
     <>
       <div
-        className="relative w-full h-screen bg-cover bg-center transition-all duration-700"
+        className={`relative w-full h-[90vh] bg-cover bg-center transition-all duration-1000 ease-in-out ${
+          animateImage
+            ? "opacity-0 scale-105 animate-fadeInImage"
+            : "opacity-100"
+        }`}
         style={{ backgroundImage: `url(${images[currentIndex]})` }}
       >
         {/* Overlay */}
-        <div className="absolute inset-0 bg-opacity-50 flex items-center justify-center px-4">
+        <div className="absolute inset-0  bg-opacity-50 flex items-center justify-center px-4">
           <div className="max-w-4xl text-center text-white">
-            <h1 className="text-3xl md:text-5xl font-bold mb-6">
+            <h1
+              className={`text-3xl md:text-5xl font-bold mb-6 transform transition-all duration-700 ease-out ${
+                animateText ? "opacity-0 translate-y-10 animate-fadeInUp" : ""
+              }`}
+            >
               Annual Maintenance Contract
             </h1>
             <button
@@ -72,7 +93,7 @@ const Home = () => {
         </button>
       </div>
 
-      {/* Other sections */}
+      {/* Other Sections */}
       <HeroSection />
       <Services />
     </>

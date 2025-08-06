@@ -137,7 +137,7 @@ const AboutSection = () => {
         </div>
       </section>
 
-      <section className="py-6 px-4 md:px-8 lg:px-20 bg-white">
+      <section className="px-4 md:px-8 lg:px-20 bg-white">
         <div className="max-w-6xl mx-auto text-center mb-12">
           <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4 uppercase">
             About Techware Solution
@@ -145,12 +145,12 @@ const AboutSection = () => {
         </div>
 
         {/* Who We Are Section */}
-        <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center mb-16">
+        <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 items-center mb-16">
           <div>
             <img
               src={aboutImage1}
               alt="Who We Are"
-              className="rounded-lg shadow-md w-full object-cover"
+              className="rounded-lg shadow-md w-full object-cover "
             />
           </div>
           <div className="text-center md:text-left">
@@ -180,7 +180,7 @@ const AboutSection = () => {
         </div>
 
         {/* Our Mission Section */}
-        <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+        <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center py-2">
           <div className="text-center md:text-left">
             <h2 className="text-xl font-semibold uppercase tracking-widest mb-4">
               Our Mission
@@ -200,7 +200,7 @@ const AboutSection = () => {
             />
           </div>
         </div>
-        <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center mb-16 py-19">
+        <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center mb-16 py-15">
           <div>
             <img
               src={aboutImage3}
