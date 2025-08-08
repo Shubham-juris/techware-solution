@@ -26,7 +26,7 @@ const CareerSection = () => {
   };
   return (
     <>
-      <section className="relative">
+      <div className="relative">
         <div className="w-full">
           <img
             src={careerImage3}
@@ -53,8 +53,8 @@ const CareerSection = () => {
             </a>
           </p>
         </div>
-      </section>
-      <div className="min-h-screen flex items-center justify-center bg-gray-100 px-4 py-8 ">
+      </div>
+      <div className=" flex items-center justify-center bg-gray-100 px-4 py-8 ">
         <form
           onSubmit={handleSubmit}
           className="w-full max-w-3xl bg-white p-6 rounded shadow-md"

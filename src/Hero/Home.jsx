@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import HeroSection from "../Hero/HeroSection";
-import heroImg2 from "../assets/hero/heroImg2.jpg";
 import heroImg9 from "../assets/hero/heroImg9.jpg";
 import heroImg10 from "../assets/hero/heroImg10.jpg";
 import heroImg11 from "../assets/hero/heroImg11.jpg";
@@ -27,12 +26,6 @@ const Home = () => {
       heading: "Cloud Solutions & Security",
       buttonText: "Get Started",
       link: "/cloud",
-    },
-    {
-      image: heroImg2,
-      heading: "Trusted IT Consulting",
-      buttonText: "Learn More",
-      link: "/consulting",
     },
   ];
 
@@ -79,28 +72,28 @@ const Home = () => {
         }`}
         style={{ backgroundImage: `url(${image})` }}
       >
+        {/* Centered Text and Button */}
         <div
-          className={`absolute inset-0  transition-opacity duration-1000 ${
-            animateOverlay ? "bg-opacity-70" : "bg-opacity-50"
-          } flex items-center justify-between px-6 md:px-20`}
+          className={`absolute inset-0 flex flex-col items-center justify-center text-center px-6 md:px-20 transition-opacity duration-1000 ${
+            animateOverlay ? " bg-opacity-70" : " bg-opacity-50"
+          }`}
         >
-          <div className="w-full md:w-1/2 text-white text-left space-y-6">
-            <h1
-              className={`text-3xl md:text-6xl font-bold transition-all duration-700 ease-out ${
-                animateText ? "opacity-0 translate-y-10" : "opacity-100"
-              }`}
-            >
-              {heading}
-            </h1>
-            <button
-              onClick={handleClick}
-              className="bg-white text-blue-900 font-semibold py-2 px-6 rounded-full hover:bg-gray-300 transition"
-            >
-              {buttonText}
-            </button>
-          </div>
+          <h1
+            className={`text-3xl md:text-6xl font-bold text-white transition-all duration-700 ease-out ${
+              animateText ? "opacity-0 translate-y-10" : "opacity-100"
+            }`}
+          >
+            {heading}
+          </h1>
+          <button
+            onClick={handleClick}
+            className="mt-6 bg-white text-blue-900 font-semibold py-2 px-6 rounded-full hover:bg-gray-300 transition"
+          >
+            {buttonText}
+          </button>
         </div>
 
+        {/* Prev Button */}
         <button
           onClick={handlePrev}
           className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-gray-700 bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-80 transition"
@@ -108,6 +101,8 @@ const Home = () => {
         >
           &#10094;
         </button>
+
+        {/* Next Button */}
         <button
           onClick={handleNext}
           className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-gray-700 bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-80 transition"
