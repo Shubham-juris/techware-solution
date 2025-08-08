@@ -1,5 +1,5 @@
 import React from "react";
-
+import { FaPhoneAlt } from "react-icons/fa";
 const ContactSection = () => {
   return (
     <>
@@ -12,24 +12,36 @@ const ContactSection = () => {
           us using the details.
         </p>
 
-        <div className="flex flex-col md:flex-row md:space-x-10">
+        <div className="flex flex-col md:flex-row md:space-x-10 py-8 ">
+          <div className="md:w-1/3 mt-8 md:mt-0 bg-gray-50 p-6 rounded-xl shadow-md">
+            <h3 className="text-xl font-semibold text-gray-800 mb-4">
+              Techware Solutions
+            </h3>
+            <p className="text-gray-600">🏢 Albata,Canada</p>
+            <p className="text-gray-600 flex items-center gap-2 py-5">
+              <FaPhoneAlt className="text-blue-600" />
+              <span>
+                <a href="tel:+919533331419" className="hover:underline">
+                  +91-9533331419,9391177774
+                </a>
+              </span>
+            </p>
+          </div>
           <div className="md:w-2/3 bg-white p-6 rounded-xl shadow-md">
             <form className="space-y-4">
               <div>
-                <label className="block text-gray-700 mb-1">Name</label>
+                <label className="block text-gray-700 mb-1">Name *</label>
                 <input
                   required
                   type="text"
-                  placeholder="Your Name"
                   className="w-full border border-gray-300 px-4 py-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500"
                 />
               </div>
               <div>
-                <label className="block text-gray-700 mb-1">Email</label>
+                <label className="block text-gray-700 mb-1">Email*</label>
                 <input
                   required
                   type="email"
-                  placeholder="you@example.com"
                   className="w-full border border-gray-300 px-4 py-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500"
                 />
               </div>
@@ -37,7 +49,6 @@ const ContactSection = () => {
                 <label className="block text-gray-700 mb-1">Message</label>
                 <textarea
                   rows="4"
-                  placeholder="Your message..."
                   className="w-full border border-gray-300 px-4 py-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500"
                 ></textarea>
               </div>
@@ -48,14 +59,6 @@ const ContactSection = () => {
                 Send Message
               </button>
             </form>
-          </div>
-
-          <div className="md:w-1/3 mt-8 md:mt-0 bg-gray-50 p-6 rounded-xl shadow-md">
-            <h3 className="text-xl font-semibold text-gray-800 mb-4">
-              Techware Solutions
-            </h3>
-
-            <p className="text-gray-600">🏢 Albata,Canada</p>
           </div>
         </div>
       </div>

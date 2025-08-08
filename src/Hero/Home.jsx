@@ -8,24 +8,44 @@ import heroImg11 from "../assets/hero/heroImg11.jpg";
 const Home = () => {
   const navigate = useNavigate();
 
+  // const slides = [
+  //   {
+  //     image: heroImg9,
+  //     heading: "Annual Maintenance Contract",
+  //     buttonText: "Read More",
+  //     link: "/about",
+  //   },
+  //   {
+  //     image: heroImg10,
+  //     heading: "Enterprise IT Infrastructure",
+  //     buttonText: "Explore Services",
+  //     link: "/services",
+  //   },
+  //   {
+  //     image: heroImg11,
+  //     heading: "Cloud Solutions & Security",
+  //     buttonText: "Get Started",
+  //     link: "/cloud",
+  //   },
+  // ];
   const slides = [
     {
       image: heroImg9,
-      heading: "Annual Maintenance Contract",
-      buttonText: "Read More",
-      link: "/about",
+      heading: "Modern Web Development",
+      buttonText: "Learn More",
+      link: "/web-development",
     },
     {
       image: heroImg10,
-      heading: "Enterprise IT Infrastructure",
-      buttonText: "Explore Services",
-      link: "/services",
+      heading: "Innovative Mobile App Solutions",
+      buttonText: "Explore now",
+      link: "/app-development",
     },
     {
       image: heroImg11,
-      heading: "Cloud Solutions & Security",
-      buttonText: "Get Started",
-      link: "/cloud",
+      heading: "Custom Software Development",
+      buttonText: "View ",
+      link: "/software-development",
     },
   ];
 
@@ -72,7 +92,6 @@ const Home = () => {
         }`}
         style={{ backgroundImage: `url(${image})` }}
       >
-        {/* Centered Text and Button */}
         <div
           className={`absolute inset-0 flex flex-col items-center justify-center text-center px-6 md:px-20 transition-opacity duration-1000 ${
             animateOverlay ? " bg-opacity-70" : " bg-opacity-50"
@@ -92,8 +111,6 @@ const Home = () => {
             {buttonText}
           </button>
         </div>
-
-        {/* Prev Button */}
         <button
           onClick={handlePrev}
           className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-gray-700 bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-80 transition"
@@ -101,8 +118,6 @@ const Home = () => {
         >
           &#10094;
         </button>
-
-        {/* Next Button */}
         <button
           onClick={handleNext}
           className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-gray-700 bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-80 transition"
