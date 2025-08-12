@@ -1,10 +1,11 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Menu, X, ChevronDown } from "lucide-react";
 import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [servicesDropdown, setServicesDropdown] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
 
   const menuItems = [
     { name: "Home", href: "/" },
@@ -22,20 +23,40 @@ const Navbar = () => {
     { name: "Digital Marketing", href: "/digital-marketing" },
   ];
 
+  // Add shadow when scrolling
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 10) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <nav className="bg-white shadow-md w-full">
+    <nav
+      className={`bg-white w-full sticky top-0 z-50 transition-shadow duration-300 ${
+        isScrolled ? "shadow-md" : "shadow-sm"
+      }`}
+    >
       <div className="max-w-7xl mx-auto px-4 py-5 flex justify-between items-center">
+        {/* Logo */}
         <div className="flex items-center space-x-2">
           <span className="font-semibold text-red-600 text-lg">Techware</span>
           <span className="italic text-blue-500 text-lg">Solutions</span>
         </div>
 
+        {/* Mobile Menu Button */}
         <div className="md:hidden">
           <button onClick={() => setIsOpen(!isOpen)}>
             {isOpen ? <X /> : <Menu />}
           </button>
         </div>
 
+        {/* Desktop Menu */}
         <div className="hidden md:flex items-center space-x-6">
           {menuItems.map((item) =>
             item.name === "Services" ? (
@@ -97,6 +118,7 @@ const Navbar = () => {
         </div>
       </div>
 
+      {/* Mobile Dropdown Menu */}
       {isOpen && (
         <div className="md:hidden px-4 pb-4 space-y-2">
           {menuItems.map((item) =>

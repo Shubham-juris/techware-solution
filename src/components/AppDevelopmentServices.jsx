@@ -22,7 +22,7 @@ const AppDevelopmentServices = () => {
             needs. Whether you’re a startup looking to launch your first app or
             an established company aiming to expand your digital reach, our
             expert app development team can turn your vision into reality.
-          </p>
+          </p> 
           <p>
             We develop both Android and iOS apps using native technologies like
             Kotlin, Java, Swift as well as modern cross-platform frameworks like
