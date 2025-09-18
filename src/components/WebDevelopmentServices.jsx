@@ -42,13 +42,14 @@ const WebDevelopmentServices = () => {
           </p>
 
           {/* Why Choose Us + Expertise */}
-          <div className="grid md:grid-cols-2 gap-12 text-left mt-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-96 mt-12 text-left">
+            {/* Why Choose Us */}
             <div>
-              <h2 className="text-xl font-semibold mb-3 text-blue-700">
+              <h2 className="text-xl font-semibold mb-2 text-blue-700">
                 Why Choose Us?
               </h2>
               <div className="h-1 w-12 bg-red-500 mb-4"></div>
-              <ul className="list-disc list-inside text-gray-700 space-y-2">
+              <ul className="list-disc list-inside text-gray-700 space-y-4">
                 <li>Custom website design & development</li>
                 <li>Responsive and mobile-first approach</li>
                 <li>Fast-loading, SEO optimized sites</li>
@@ -56,12 +57,13 @@ const WebDevelopmentServices = () => {
               </ul>
             </div>
 
+            {/* Our Expertise */}
             <div>
-              <h2 className="text-xl font-semibold mb-3 text-blue-700">
+              <h2 className="text-xl font-semibold mb-2 text-blue-700">
                 Our Expertise
               </h2>
               <div className="h-1 w-12 bg-red-500 mb-4"></div>
-              <ul className="list-disc list-inside text-gray-700 space-y-2">
+              <ul className="list-disc list-inside text-gray-700 space-y-4">
                 <li>React.js, Next.js, Node.js</li>
                 <li>WordPress & Headless CMS</li>
                 <li>E-commerce solutions</li>
