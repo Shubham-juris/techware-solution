@@ -46,7 +46,7 @@ const Navbar = () => {
         {/* Logo */}
         <div className="flex items-center space-x-2">
           <span className="font-semibold text-red-600 text-lg">Techware</span>
-          <span className="italic text-blue-500 text-lg">Solutions</span>
+          <span className="italic text-blue-700 text-lg">Solutions</span>
         </div>
 
         {/* Mobile Menu Button */}

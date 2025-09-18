@@ -30,7 +30,7 @@ const Home = () => {
   // ];
   const slides = [
     {
-      image: heroImg9,
+      image: heroImg11,
       heading: "Modern Web Development",
       buttonText: "Learn More",
       link: "/web-development",
@@ -42,7 +42,7 @@ const Home = () => {
       link: "/app-development",
     },
     {
-      image: heroImg11,
+      image: heroImg9,
       heading: "Custom Software Development",
       buttonText: "View ",
       link: "/software-development",
