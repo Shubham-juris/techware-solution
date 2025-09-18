@@ -42,7 +42,7 @@ const WebDevelopmentServices = () => {
           </p>
 
           {/* Why Choose Us + Expertise */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-96 mt-12 text-left">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-16 mt-12 text-left">
             {/* Why Choose Us */}
             <div>
               <h2 className="text-xl font-semibold mb-2 text-blue-700">
