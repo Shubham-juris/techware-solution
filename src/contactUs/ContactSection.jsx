@@ -17,7 +17,9 @@ const ContactSection = () => {
             <h3 className="text-xl font-semibold text-gray-800 mb-4">
               Techware Solutions
             </h3>
-            <p className="text-gray-600">🏢 Albata,Canada</p>
+            <p className="text-gray-600">
+              🏢 215-Hainst NE, Slave Lake T0G 2A2, Canada{" "}
+            </p>
             <p className="text-gray-600 flex items-center gap-2 py-5">
               <FaPhoneAlt className="text-blue-600" />
               <span>

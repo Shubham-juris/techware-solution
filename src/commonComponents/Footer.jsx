@@ -82,15 +82,10 @@ function Footer() {
             </li>
             <li className="flex items-start">
               <FaMapMarkerAlt className="mr-2 text-red-600 mt-1" />
-              <span>Alberta, Canada</span>
+              <span>215-Hainst NE, Slave Lake T0G 2A2, Canada </span>
             </li>
           </ul>
-          <div className="flex space-x-4 mt-4 text-red-600">
-            <FaFacebookF />
-            <FaTwitter />
-            <FaLinkedinIn />
-            <FaGoogle />
-          </div>
+      
         </div>
 
         <div>
