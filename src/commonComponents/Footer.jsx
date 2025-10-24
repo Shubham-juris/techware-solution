@@ -74,7 +74,7 @@ function Footer() {
           <ul className="space-y-3">
             <li className="flex items-center">
               <FaPhone className="mr-2 text-red-600" />
-              <span>+91-9533331419, 9391177774</span>
+              <span>4034773512</span>
             </li>
             <li className="flex items-center">
               <FaEnvelope className="mr-2 text-red-600" />
@@ -82,7 +82,7 @@ function Footer() {
             </li>
             <li className="flex items-start">
               <FaMapMarkerAlt className="mr-2 text-red-600 mt-1" />
-              <span>215-Hainst NE, Slave Lake T0G 2A2, Canada </span>
+              <span>213,Main Street North ,P.O.Box 718, Slave Lake ,AB TOG 2AO </span>
             </li>
           </ul>
       

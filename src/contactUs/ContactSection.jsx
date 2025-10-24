@@ -18,13 +18,13 @@ const ContactSection = () => {
               Techware Solutions
             </h3>
             <p className="text-gray-600">
-              🏢 215-Hainst NE, Slave Lake T0G 2A2, Canada{" "}
+              🏢 213,Main Street North ,P.O.Box 718, Slave Lake ,AB TOG 2AO{" "}
             </p>
             <p className="text-gray-600 flex items-center gap-2 py-5">
               <FaPhoneAlt className="text-blue-600" />
               <span>
                 <a href="tel:+919533331419" className="hover:underline">
-                  +91-9533331419,9391177774
+                  4034773512
                 </a>
               </span>
             </p>
