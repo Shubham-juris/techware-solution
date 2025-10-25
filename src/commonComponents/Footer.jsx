@@ -1,11 +1,10 @@
+import React from "react";
 import {
   FaPhone,
   FaEnvelope,
   FaMapMarkerAlt,
-  FaFacebookF,
-  FaTwitter,
-  FaLinkedinIn,
-  FaGoogle,
+  FaFacebook,
+  FaInstagram,
 } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
@@ -13,6 +12,7 @@ function Footer() {
   return (
     <footer className="bg-white text-gray-800 border-t mt-8">
       <div className="max-w-7xl mx-auto px-4 py-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+        {/* Services */}
         <div>
           <h2 className="text-xl font-semibold mb-4">Services</h2>
           <ul className="space-y-2">
@@ -23,6 +23,7 @@ function Footer() {
           </ul>
         </div>
 
+        {/* Useful Links */}
         <div>
           <h2 className="text-xl font-semibold mb-4">Useful Links</h2>
           <ul className="space-y-2">
@@ -69,25 +70,57 @@ function Footer() {
           </ul>
         </div>
 
+        {/* Connect With Us */}
         <div>
           <h2 className="text-xl font-semibold mb-4">Connect With Us</h2>
           <ul className="space-y-3">
             <li className="flex items-center">
               <FaPhone className="mr-2 text-red-600" />
-              <span>4034773512</span>
+              <a href="tel:+14034773512" className="hover:underline">
+                4034773512
+              </a>
             </li>
+
             <li className="flex items-center">
-              <FaEnvelope className="mr-2 text-red-600" />
-              <span>info@techwareitsolutions.com</span>
+              <FaEnvelope className="mr-2 text-red-600 " />
+              <a
+                href="mailto:info@techwareitsolutions.com"
+                className="text-black/90 hover:underline"
+              >
+                info@techwareitsolutions.com
+              </a>
             </li>
+
             <li className="flex items-start">
               <FaMapMarkerAlt className="mr-2 text-red-600 mt-1" />
-              <span>213,Main Street North ,P.O.Box 718, Slave Lake ,AB TOG 2AO </span>
+              <span>
+                213, Main Street North, P.O. Box 718, Slave Lake, AB T0G 2A0
+              </span>
             </li>
           </ul>
-      
+
+          {/* Social Icons */}
+          <div className="flex items-center space-x-4 mt-4">
+            <a
+              href="https://www.facebook.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-600 hover:text-blue-800 text-2xl transition-transform transform hover:scale-110"
+            >
+              <FaFacebook />
+            </a>
+            <a
+              href="https://www.instagram.com/techware_solution_"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-pink-500 hover:text-pink-700 text-2xl transition-transform transform hover:scale-110"
+            >
+              <FaInstagram />
+            </a>
+          </div>
         </div>
 
+        {/* Map */}
         <div>
           <h2 className="text-xl font-semibold mb-4">Map Location</h2>
           <iframe
@@ -102,6 +135,7 @@ function Footer() {
         </div>
       </div>
 
+      {/* Footer Bottom */}
       <div className="text-center py-4 text-sm border-t mt-4">
         Copyright © 2025 - Techware Solutions, All Rights Reserved.
       </div>

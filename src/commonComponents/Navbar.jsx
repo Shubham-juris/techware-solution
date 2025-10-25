@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Menu, X, ChevronDown } from "lucide-react";
 import { NavLink } from "react-router-dom";
+import logo from "../assets/navbar/logo.png";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -26,11 +27,7 @@ const Navbar = () => {
   // Add shadow when scrolling
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 10) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
-      }
+      setIsScrolled(window.scrollY > 10);
     };
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
@@ -42,12 +39,14 @@ const Navbar = () => {
         isScrolled ? "shadow-md" : "shadow-sm"
       }`}
     >
-      <div className="max-w-7xl mx-auto px-4 py-5 flex justify-between items-center">
-        {/* Logo */}
-        <div className="flex items-center space-x-2">
-          <span className="font-semibold text-red-600 text-lg">Techware</span>
-          <span className="italic text-blue-700 text-lg">Solutions</span>
-        </div>
+      <div className="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+        <NavLink to="/" className="flex items-center space-x-2">
+          <img
+            src={logo}
+            alt="Techware Solutions Logo"
+            className="h-14 w-auto object-contain"
+          />
+        </NavLink>
 
         {/* Mobile Menu Button */}
         <div className="md:hidden">
