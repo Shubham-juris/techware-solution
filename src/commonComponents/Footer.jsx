@@ -6,6 +6,7 @@ import {
   FaFacebook,
   FaInstagram,
 } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 
 function Footer() {
@@ -102,7 +103,7 @@ function Footer() {
           {/* Social Icons */}
           <div className="flex items-center space-x-4 mt-4">
             <a
-              href="https://www.facebook.com/"
+              href="https://www.facebook.com/techwaresolutions01/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-blue-600 hover:text-blue-800 text-2xl transition-transform transform hover:scale-110"
@@ -110,13 +111,21 @@ function Footer() {
               <FaFacebook />
             </a>
             <a
-              href="https://www.instagram.com/techware_solution_"
+              href="https://www.instagram.com/techware_2211/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-pink-500 hover:text-pink-700 text-2xl transition-transform transform hover:scale-110"
             >
               <FaInstagram />
             </a>
+             <a
+                href=" https://x.com/TechwareSo70252"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-black hover:text-gray-700 text-2xl transition-transform transform hover:scale-110"
+              >
+                <FaXTwitter />
+              </a>
           </div>
         </div>
 
