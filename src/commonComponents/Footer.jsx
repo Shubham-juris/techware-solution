@@ -26,12 +26,12 @@ function Footer() {
 
         {/* Useful Links */}
         <div>
-          <h2 className="text-xl font-semibold mb-4">Useful Links</h2>
+          <h2 className="text-xl font-semibold mb-4">Quick Links</h2>
           <ul className="space-y-2">
             <li>
               <Link
                 to="/"
-                className="text-blue-600 hover:text-red-600 hover:underline"
+                className="text-black hover:text-red-600 hover:underline"
               >
                 Home
               </Link>
@@ -39,7 +39,7 @@ function Footer() {
             <li>
               <Link
                 to="/about"
-                className="text-blue-600 hover:text-red-600 hover:underline"
+                className="text-black hover:text-red-600 hover:underline"
               >
                 About Us
               </Link>
@@ -47,7 +47,7 @@ function Footer() {
             <li>
               <Link
                 to="/technologice"
-                className="text-blue-600 hover:text-red-600 hover:underline"
+                className="text-black hover:text-red-600 hover:underline"
               >
                 Technologies
               </Link>
@@ -55,7 +55,7 @@ function Footer() {
             <li>
               <Link
                 to="/career"
-                className="text-blue-600 hover:text-red-600 hover:underline"
+                className="text-black hover:text-red-600 hover:underline"
               >
                 Careers
               </Link>
@@ -63,7 +63,7 @@ function Footer() {
             <li>
               <Link
                 to="/contact"
-                className="text-blue-600 hover:text-red-600 hover:underline"
+                className="text-black hover:text-red-600 hover:underline"
               >
                 Contact Us
               </Link>
@@ -118,14 +118,14 @@ function Footer() {
             >
               <FaInstagram />
             </a>
-             <a
-                href=" https://x.com/TechwareSo70252"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-black hover:text-gray-700 text-2xl transition-transform transform hover:scale-110"
-              >
-                <FaXTwitter />
-              </a>
+            <a
+              href=" https://x.com/TechwareSo70252"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-black hover:text-gray-700 text-2xl transition-transform transform hover:scale-110"
+            >
+              <FaXTwitter />
+            </a>
           </div>
         </div>
 
