@@ -20,7 +20,7 @@ const ContactSection = () => {
             <p className="text-gray-600">
               🏢 213,Main Street North ,P.O.Box 718, Slave Lake ,AB TOG 2AO{" "}
             </p>
-             <p>
+             <p className="text-gray-600">
               🏢 2-4812 50 Avenue, Athabasca, Alberta, Canada T9S 1H5
             </p>
             <p className="text-gray-600 flex items-center gap-2 py-5">
