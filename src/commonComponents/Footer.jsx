@@ -92,12 +92,33 @@ function Footer() {
               </a>
             </li>
 
-            <li className="flex items-start">
+            {/* <li className="flex items-start">
               <FaMapMarkerAlt className="mr-2 text-red-600 mt-1" />
               <span>
                 213, Main Street North, P.O. Box 718, Slave Lake, AB T0G 2A0
               </span>
-            </li>
+            </li> */}
+            <li className="flex items-start">
+  <FaMapMarkerAlt className="mr-3 text-red-600 mt-1 flex-shrink-0" />
+
+  <div className="space-y-3">
+    <div>
+      <p className="leading-relaxed">
+        213 Main Street North, P.O. Box 718,
+        <br />
+        Slave Lake, AB T0G 2A0
+      </p>
+    </div>
+
+    <div className="border-t border-gray-300 pt-3">
+      <p className="leading-relaxed">
+        2-4812 50 Avenue,
+        <br />
+        Athabasca, Alberta, Canada T9S 1H5
+      </p>
+    </div>
+  </div>
+</li>
           </ul>
 
           {/* Social Icons */}
