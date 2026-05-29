@@ -85,10 +85,10 @@ function Footer() {
             <li className="flex items-center">
               <FaEnvelope className="mr-2 text-red-600 " />
               <a
-                href="mailto:info@techwareitsolutions.com"
+                href="mailto:info@techware-solution.com"
                 className="text-black/90 hover:underline"
               >
-                info@techwareitsolutions.com
+                info@techware-solution.com
               </a>
             </li>
 
