@@ -70,7 +70,7 @@ const TechnologiesSection = () => {
               Take your Business to the Next Level with our Solutions
             </h2>
             <p className="text-sm md:text-base leading-relaxed">
-              Techware Solutions, with trust and experience has been driving
+              Techware Solution, with trust and experience has been driving
               businesses across the region with the best-in-class ICT
               Infrastructure Products and Services. We provide a variety of
               tools to help businesses of all kinds succeed on and off the web.
@@ -85,7 +85,7 @@ const TechnologiesSection = () => {
             Our Technologies
           </h1>
           <p className="mt-4 text-gray-600 text-md md:text-lg">
-            Techware IT Solutions leverages cutting-edge technology to deliver
+            Techware Solution leverages cutting-edge technology to deliver
             powerful, secure, and scalable IT services.
           </p>
         </div>
