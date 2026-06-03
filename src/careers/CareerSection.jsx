@@ -37,14 +37,14 @@ const CareerSection = () => {
 
         <div className="bg-white text-center px-4 py-8 md:py-12 max-w-6xl mx-auto">
           <p className="text-gray-800 text-base md:text-lg mb-4">
-            Techware having core focus on technology consulting and integration
+            Techware solution having core focus on technology consulting and integration
             services is always in need of enthusiastic and energetic engineers
             who are passionate about information technologies. Our strong
             systems and processes are ideally suited to get the best from the
             professionals those who are willing to invest their time and energy
             on knowledge and skill acquisition. We believe in growth of each
             team member which in turn helps grow clients business and fulfill
-            Techware's commitment. Please Send your Resume to{" "}
+            Techware solution commitment. Please Send your Resume to{" "}
             <a
               href="mailto:info@techwareitsolutions.com"
               className="text-blue-600 underline"
