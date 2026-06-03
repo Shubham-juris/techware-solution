@@ -17,7 +17,7 @@ const AppDevelopmentServices = () => {
           <div className="h-1 bg-red-500 mx-auto mb-6 w-16"></div>
 
           <p className="text-gray-700 text-lg mb-6">
-            At <span className="font-semibold">Techware Solutions</span>, we
+            At <span className="font-semibold">Techware Solution</span>, we
             specialize in building high-quality, performance-driven mobile
             applications tailored to your business needs. Whether you’re a
             startup or an established company, our expert team can turn your
@@ -121,7 +121,7 @@ const AppDevelopmentServices = () => {
 
             <p className="text-gray-700 text-lg mb-4">
               From idea validation to post-launch support,{" "}
-              <span className="font-semibold">Techware Solutions</span> is your
+              <span className="font-semibold">Techware Solution</span> is your
               trusted partner. We’ve delivered apps across industries like
               e-commerce, healthcare, education, and logistics.
             </p>
