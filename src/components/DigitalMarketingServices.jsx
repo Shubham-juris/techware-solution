@@ -19,7 +19,7 @@ const DigitalMarketingServices = () => {
           <p className="text-gray-700 text-lg mb-6">
             In today’s competitive digital landscape, simply having an online
             presence is not enough — your brand needs a strong strategy to stand
-            out. At <span className="font-semibold">Techware Solutions</span>,
+            out. At <span className="font-semibold">Techware Solution</span>,
             we provide comprehensive digital marketing services that help
             businesses attract, engage, and convert their audience effectively.
           </p>
@@ -119,7 +119,7 @@ const DigitalMarketingServices = () => {
             </ul>
 
             <p className="text-gray-700 text-lg">
-              At <span className="font-semibold">Techware Solutions</span>, we
+              At <span className="font-semibold">Techware Solution</span>, we
               don’t just bring traffic — we bring the{" "}
               <span className="italic">right traffic</span>. Our goal is to grow
               your brand, improve ROI, and keep you ahead of the competition.
