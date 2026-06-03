@@ -12,23 +12,23 @@ const HeroSection = () => {
       <div className="container gap-x-16 mx-auto px-4 py-6 mt-4 md:px-8 lg:px-16 flex flex-col md:flex-row items-center justify-center">
         <div className="md:w-1/2 space-y-6 max-w-lg mx-auto md:mx-0 px-2">
           <h1 className="text-2xl md:text-3xl font-bold text-blue-900">
-            Welcome To Techware Solutions
+            Welcome To Techware Solution
             <br />
             IT Infrastructure Management Services
           </h1>
           <div className="h-1 w-12 bg-red-500 mb-6"></div>
           <p className="text-gray-700 px-2">
             Founded by a team of IT professionals having around 5 decades of
-            collective experience, Techware IT Solutions was founded with a sole
+            collective experience, Techware Solution was founded with a sole
             objective of translating organization’s business needs into
             effective information systems. Techware also realizes that the best
             way to achieve this is by being vendor neutral.
           </p>
           <p className="text-gray-700 px-2">
-            Over the years Techware has been able to develop strong systems and
+            Over the years Techware solution has been able to develop strong systems and
             processes to take care of its all three stakeholders – Customers,
             Partners & Employees. Customers have been given the best of our
-            attention with a Motto to achieve “100% Customer 100% Happy”. We
+            attention with a Motto to achieve “100% Customer Satisfaction”. We
             have created a strong service delivery methodology backed by quality
             governance and feedback system so as to be....
           </p>
