@@ -15,7 +15,7 @@ const ContactSection = () => {
         <div className="flex flex-col md:flex-row md:space-x-10 py-8 ">
           <div className="md:w-1/3 mt-8 md:mt-0 bg-gray-50 p-6 rounded-xl shadow-md">
             <h3 className="text-xl font-semibold text-gray-800 mb-4">
-              Techware Solutions
+              Techware Solution
             </h3>
             <p className="text-gray-600">
               🏢 213,Main Street North ,P.O.Box 718, Slave Lake ,AB TOG 2AO{" "}
