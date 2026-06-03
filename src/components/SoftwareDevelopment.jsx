@@ -17,7 +17,7 @@ const SoftwareDevelopment = () => {
           <div className="h-1 bg-red-500 mx-auto mb-6 w-16"></div>
 
           <p className="text-gray-700 text-lg mb-6">
-            At <span className="font-semibold">Techware Solutions</span>, we
+            At <span className="font-semibold">Techware Solution</span>, we
             provide custom software development services that help businesses
             innovate, automate, and grow. Our goal is to build reliable, secure,
             and scalable solutions tailored to your unique requirements.
@@ -117,7 +117,7 @@ const SoftwareDevelopment = () => {
               We are committed to delivering high-performance solutions that
               align with your vision, budget, and timeline. From idea validation
               to deployment and ongoing support,{" "}
-              <span className="font-semibold">Techware Solutions</span> is your
+              <span className="font-semibold">Techware Solution</span> is your
               trusted technology partner.
             </p>
             <p className="text-gray-700 text-lg">
