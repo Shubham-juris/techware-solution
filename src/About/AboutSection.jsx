@@ -23,21 +23,20 @@ const AboutSection = () => {
 
           <div className="w-full md:w-1/2">
             <h2 className="py-2 text-3xl font-bold text-blue-800 mb-4 border-b-4 border-red-500 inline-block">
-              Techware IT Solutions
+              Techware Solution
             </h2>
             <p className="text-gray-700 mb-4">
               Founded by a team of IT professionals having around 5 decades of
-              collective experience, Techware IT Solutions was founded with a
+              collective experience, Techware Solution was founded with a
               sole objective of translating organization’s business needs into
-              effective information systems. Techware also realizes that the
+              effective information systems. Techware solution also realizes that the
               best way to achieve this is by being vendor neutral.
             </p>
             <p className="text-gray-700 mb-4">
-              Over the years Techware has been able to develop strong systems
+              Over the years Techware solution has been able to develop strong systems
               and processes to take care of its all the three stakeholders –
               Customers, Partners & Employees. Customers have been given the
-              best of our attention with a motto to achieve 100% Customer 100%
-              Happy.
+              best of our attention with a motto to achieve 100% Customer satisfaction.
             </p>
             <p className="text-gray-700 mb-4">
               Our commitment to provide best-in-class customer services has also
@@ -46,7 +45,7 @@ const AboutSection = () => {
               a cost-effective manner.
             </p>
             <p className="text-gray-700">
-              Techware promotes knowledge culture where-in employees are trained
+              Techware solution promotes knowledge culture where-in employees are trained
               and encouraged to constantly upgrade their skills and are also
               abreast with the latest technologies and trends.
             </p>
@@ -56,10 +55,10 @@ const AboutSection = () => {
       <section className="py-12 px-4 md:px-8 lg:px-16 bg-white">
         <div className="max-w-6xl mx-auto text-center">
           <h1 className="text-4xl md:text-5xl font-bold text-blue-900 mb-4">
-            About Techware Solutions
+            About Techware Solution
           </h1>
           <p className="text-gray-700 text-lg mb-6">
-            At Techware Solutions, we are passionate about building modern,
+            At Techware Solution, we are passionate about building modern,
             scalable, and user-friendly digital products. With expertise across
             web development, app development, UI/UX design, and digital
             marketing, we help businesses grow and succeed in the digital era.
