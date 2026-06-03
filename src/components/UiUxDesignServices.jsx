@@ -20,7 +20,7 @@ const UiUxDesignServices = () => {
           <div className="h-1 w-24 bg-red-500 mx-auto mb-8"></div>
 
           <p className="text-gray-700 text-lg mb-6 leading-relaxed">
-            At <span className="font-semibold">Techware Solutions</span>, we
+            At <span className="font-semibold">Techware Solution</span>, we
             believe that great design is more than just aesthetics — it’s about
             creating meaningful and intuitive experiences that delight users and
             drive business success. Our expert UI/UX design team transforms
