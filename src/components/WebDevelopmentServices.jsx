@@ -19,7 +19,7 @@ const WebDevelopmentServices = () => {
           <div className="h-1 w-24 bg-red-500 mx-auto mb-8"></div>
 
           <p className="text-gray-700 text-lg mb-6 leading-relaxed">
-            At <span className="font-semibold">Techware Solutions</span>, we
+            At <span className="font-semibold">Techware Solution</span>, we
             specialize in building modern, responsive, and user-friendly
             websites tailored to your business needs. In today’s digital world,
             your website is more than just an online presence — it’s the face of
@@ -116,7 +116,7 @@ const WebDevelopmentServices = () => {
 
             <p className="text-gray-700">
               With years of experience and a passion for innovation,{" "}
-              <span className="font-semibold">Techware Solutions</span> is a
+              <span className="font-semibold">Techware Solution</span> is a
               trusted partner for businesses looking to establish a powerful
               online presence.
             </p>
