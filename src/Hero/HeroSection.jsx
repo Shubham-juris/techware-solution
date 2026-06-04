@@ -18,19 +18,20 @@ const HeroSection = () => {
           </h1>
           <div className="h-1 w-12 bg-red-500 mb-6"></div>
           <p className="text-gray-700 px-2">
-            Founded by a team of IT professionals having around 5 decades of
-            collective experience, Techware Solution was founded with a sole
-            objective of translating organization’s business needs into
-            effective information systems. Techware also realizes that the best
-            way to achieve this is by being vendor neutral.
+           Founded by a team of experienced IT professionals, 
+            Techware Solution was established with the objective of transforming 
+            business requirements into efficient and scalable information systems. We focus on 
+            delivering technology solutions that align with 
+            organizational goals while maintaining a vendor-neutral approach 
+            to ensure flexibility, transparency, and long-term value.
           </p>
           <p className="text-gray-700 px-2">
-            Over the years Techware solution has been able to develop strong systems and
-            processes to take care of its all three stakeholders – Customers,
-            Partners & Employees. Customers have been given the best of our
-            attention with a Motto to achieve “100% Customer Satisfaction”. We
-            have created a strong service delivery methodology backed by quality
-            governance and feedback system so as to be....
+            Over the years, Techware Solution has developed well-defined systems and 
+            processes to effectively serve its key stakeholders — customers, partners, 
+            and employees. We prioritize customer satisfaction through a structured service 
+            delivery framework supported by quality assurance practices and continuous feedback mechanisms.
+            Our approach is centered on delivering consistent value, maintaining service quality, and building
+            long-term trusted relationships.
           </p>
         </div>
 
