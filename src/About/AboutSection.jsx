@@ -26,17 +26,18 @@ const AboutSection = () => {
               Techware Solution
             </h2>
             <p className="text-gray-700 mb-4">
-              Founded by a team of IT professionals having around 5 decades of
-              collective experience, Techware Solution was founded with a
-              sole objective of translating organization’s business needs into
-              effective information systems. Techware solution also realizes that the
-              best way to achieve this is by being vendor neutral.
+               Techware Solution was established with the objective of helping
+                organizations transform their business requirements into effective,
+                reliable, and innovative technology solutions. We take a vendor-neutral
+                approach, allowing us to recommend and implement solutions that best
+                align with our clients’ unique goals and operational needs.
             </p>
             <p className="text-gray-700 mb-4">
-              Over the years Techware solution has been able to develop strong systems
-              and processes to take care of its all the three stakeholders –
-              Customers, Partners & Employees. Customers have been given the
-              best of our attention with a motto to achieve 100% Customer satisfaction.
+              Techware Solution has developed strong systems and processes focused on
+            creating value for its key stakeholders — customers, partners, and
+            employees. We are committed to delivering exceptional service,
+            building long-term relationships, and maintaining the highest standards
+            of professionalism across all our engagements.
             </p>
             <p className="text-gray-700 mb-4">
               Our commitment to provide best-in-class customer services has also
@@ -151,18 +152,18 @@ const AboutSection = () => {
             <h2 className="text-xl font-semibold uppercase tracking-widest mb-4">
               Who We Are
             </h2>
-            <p className="text-gray-700 leading-relaxed">
-              For the last 12 years, <strong>Techware Solution</strong> has been
-              at the forefront of the IT services industry, delivering reliable,
-              innovative, and tailored technology solutions to businesses of all
-              sizes. Our team of seasoned professionals provides expertise in{" "}
-              <strong>
-                firewall configuration, network management, server installation,
-                cybersecurity
-              </strong>
-              , and <strong>cloud computing</strong> — ensuring your IT
-              infrastructure is secure, efficient, and scalable.
-            </p>
+             <p className="text-gray-700 leading-relaxed">
+            <strong>Techware Solution</strong> is a technology-driven company
+            dedicated to delivering reliable, innovative, and customized IT
+            solutions for businesses of all sizes. Our team provides expertise in{" "}
+            <strong>
+              firewall configuration, network management, server installation,
+              cybersecurity
+            </strong>
+            , and <strong>cloud computing</strong>, helping organizations build
+            secure, efficient, and scalable IT environments that support long-term
+            growth and success.
+          </p>
           </div>
         </div>
 
@@ -199,11 +200,11 @@ const AboutSection = () => {
               Our Vision
             </h2>
             <p className="text-gray-700 leading-relaxed">
-              As we look to the future, our vision remains to continue
-              delivering top-tier IT services that help businesses stay
-              competitive in a rapidly evolving digital landscape. We strive to
-              be the go-to partner for businesses looking to innovate and grow,
-              backed by 12 years of proven expertise and success.
+               Our vision is to be a trusted technology partner that helps
+            organizations navigate digital transformation with confidence. We
+            strive to deliver innovative IT solutions, foster lasting client
+            relationships, and empower businesses to achieve sustainable growth in
+            an ever-evolving technological landscape.
             </p>
           </div>
         </div>
