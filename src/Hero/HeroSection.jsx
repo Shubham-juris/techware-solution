@@ -18,20 +18,10 @@ const HeroSection = () => {
           </h1>
           <div className="h-1 w-12 bg-red-500 mb-6"></div>
           <p className="text-gray-700 px-2">
-           Founded by a team of experienced IT professionals, 
-            Techware Solution was established with the objective of transforming 
-            business requirements into efficient and scalable information systems. We focus on 
-            delivering technology solutions that align with 
-            organizational goals while maintaining a vendor-neutral approach 
-            to ensure flexibility, transparency, and long-term value.
+           Techware Solution was founded with the vision of transforming business requirements into efficient, scalable, and practical technology solutions. With extensive experience in information technology and software development, the focus has always been on helping businesses leverage the right technologies to improve operations, enhance productivity, and achieve their objectives. By maintaining a vendor-neutral approach, Techware Solution ensures flexibility, transparency, and solutions that deliver long-term value.
           </p>
           <p className="text-gray-700 px-2">
-            Over the years, Techware Solution has developed well-defined systems and 
-            processes to effectively serve its key stakeholders — customers, partners, 
-            and employees. We prioritize customer satisfaction through a structured service 
-            delivery framework supported by quality assurance practices and continuous feedback mechanisms.
-            Our approach is centered on delivering consistent value, maintaining service quality, and building
-            long-term trusted relationships.
+            Over the years, Techware Solution has established well-defined processes and a customer-focused approach to consistently deliver high-quality services. Customer satisfaction remains the highest priority, supported by structured project management, quality assurance practices, and continuous feedback. This commitment to excellence enables the delivery of reliable solutions, fosters long-term relationships, and ensures that every project receives dedicated attention and professional support.
           </p>
         </div>
 
