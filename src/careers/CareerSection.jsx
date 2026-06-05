@@ -46,10 +46,10 @@ const CareerSection = () => {
             team member which in turn helps grow clients business and fulfill
             Techware solution commitment. Please Send your Resume to{" "}
             <a
-              href="mailto:info@techwareitsolutions.com"
+              href="mailto:info@techware-solution.com"
               className="text-blue-600 underline"
             >
-              info@techwareitsolutions.com
+              info@techware-solution.com
             </a>
           </p>
         </div>
